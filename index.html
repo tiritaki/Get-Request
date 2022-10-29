@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
+    <title>GET</title>
+  </head>
+  <body>
+    <h2>Get Request</h2>
+
+    <form target="_blank" action="https://github.com/search" method="GET">
+      <label for="select">Choose from dropdown list:</label>
+      <select id="select" name="s">
+        <option value="stars">Stars</option>
+        <option value="forks">Forks</option>
+        <option value="updated">Updated</option>
+      </select>
+
+      <p><strong>Sorting:</strong></p>
+      <input type="radio" id="desc" name="o" value="desc" />
+      <label for="desc">desc</label><br />
+      <input type="radio" id="asc" name="o" value="asc" />
+      <label for="asc">asc</label><br />
+
+      <p><strong>Search:</strong></p>
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="q" placeholder="search" />
+      
+      <input type="submit" />
+    </form>
+  </body>
+</html>
